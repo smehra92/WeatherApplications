@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function FetchWeather() {
+function FetchWeather({town}) {
 
     const [city, setCity] = useState("")
     const [country, setCountry] = useState("")
@@ -13,9 +13,9 @@ function FetchWeather() {
     async function weather() {
         const apiURL = "https://api.openweathermap.org/data/2.5/weather?units=metric"
         const apiKey = "3fdd8a7e5ab795e836dfa48141d0e89b"
-        const place = "Jabalpur"
-
-        const response = await fetch(apiURL + `&appid=${apiKey}` + `&q=${place}`)
+        //const place = {town}
+        
+        const response = await fetch(apiURL + `&appid=${apiKey}` + `&q=${town}`)
         const data = await response.json()
         setTemperature(data.main.temp)
         setSky(data.weather[0].main)

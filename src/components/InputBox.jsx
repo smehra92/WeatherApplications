@@ -1,8 +1,8 @@
 import { useState } from "react"
 
-function InputBox() {
+function InputBox({setTown}) {
     const [cityname, setCityname] = useState("")
-    const submitHandler = () => { console.log(cityname) }
+    const submitHandler = () => { setTown(cityname) }
 
     return <div className="flex">
         <input onChange={(e) => { setCityname(e.target.value) }}
