@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 15px;
+  box-shadow: 0px 0px 53px -20px var(--color);
+  -webkit-box-shadow: 0px 0px 53px -20px var(--color);
+  -moz-box-shadow: 0px 0px 53px -20px var(--color);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.48);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
