@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function FetchWeather({town}) {
+function FetchWeather({town, getskydata}) {
 
     const [city, setCity] = useState("")
     const [country, setCountry] = useState("")
@@ -22,10 +22,16 @@ function FetchWeather({town}) {
         setCity(data.name)
         setCountry(data.sys.country)
         console.log(data)
+        
+        const skydata = (e) => {
+            getskydata(sky)
+        }
+        skydata()
+
     }
     weather()
 
-    return <div className="flex flex-col text-center mt-5 mb-5">
+    return <div className="flex flex-col text-center mt-1 mb-6">
         <div>
             {date}
         </div>

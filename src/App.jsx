@@ -1,7 +1,6 @@
 import './App.css'
 import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
-import InputBox from './components/InputBox'
 
 function App() {
 
@@ -10,7 +9,6 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Dashboard />} />
-      {/* <Route path="/inputbox" element={<InputBox />} /> */}
     </Routes>
     </BrowserRouter>
     </>

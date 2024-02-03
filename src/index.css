@@ -2,9 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* .main {
+  @apply bg-[url('https://vastphotos.com/files/uploads/photos/10971/impressive-mountain-landscape-l.jpg?v=20220712073521')] bg-cover h-screen flex justify-center text-blue-500
+} */
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+  z-index: 1;
+}
+
 .card {
-    margin-top: 100px;
-    margin-bottom: 50px;
+  z-index: 2;
+  opacity: 80%;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 600px;
+  margin-bottom: 50px;
   width: 300px;
   height: 400px;
   display: flex;
@@ -18,7 +47,13 @@
   -moz-box-shadow: 0px 0px 53px -20px var(--color);
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.48);
+  background-color: rgba(244, 244, 241, 0.73);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  @apply outline outline-offset-1 outline-gray-200 font-medium
+}
+
+h6{
+  font-size: 3rem;
+  color: rgb(244 63 94)
 }
