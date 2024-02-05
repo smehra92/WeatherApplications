@@ -2,7 +2,7 @@ import { useState } from "react"
 import FetchWeather from "../components/FetchWeather"
 import InputBox from "../components/InputBox"
 import Snow from "../assets/Snow.mp4"
-import Sun from "../assets/Sun.mp4"
+import Clear from "../assets/Clear.mp4"
 import Rain from "../assets/Rain.mp4"
 import Cloud from "../assets/Cloud.mp4"
 import Mist from "../assets/Mist.mp4"
@@ -17,7 +17,7 @@ function Dashboard() {
         // console.log("Condition is : " + data)
         console.log(top)
         if ("Clear" === data) {
-           setTop(Sun); 
+           setTop(Clear); 
         }else if("Cloud" === data  || "Clouds" === data){
             setTop(Cloud);
         }else if("Rainy" === data){
