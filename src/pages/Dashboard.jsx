@@ -6,7 +6,6 @@ import Clear from "../assets/Clear.mp4"
 import Rain from "../assets/Rain.mp4"
 import Cloud from "../assets/Cloud.mp4"
 import Mist from "../assets/Mist.mp4"
-import Wind from "../assets/Wind.mp4"
 
 
 function Dashboard() {
