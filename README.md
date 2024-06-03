@@ -1,4 +1,2 @@
 # WeatherApplication
 
-Steps :
-
